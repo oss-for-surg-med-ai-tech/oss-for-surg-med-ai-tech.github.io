@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Organisers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    h1 {
+      font-size: 32px;
+      color: #222;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .organiser-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .organiser-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .organiser-card:hover {
+      transform: translateY(-5px);
+    }
+    .organiser-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background-color: #ddd; /* Placeholder background */
+    }
+    .organiser-content {
+      padding: 20px;
+    }
+    .organiser-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #2575fc;
+    }
+    .organiser-affiliation {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .organiser-bio {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Organising Committee</h1>
+
+<div class="organiser-grid">
+  <div class="organiser-card">
+    <div class="organiser-image"></div>
+    <div class="organiser-content">
+      <div class="organiser-name">Miguel Xochicale</div>
+      <div class="organiser-affiliation">University College London</div>
+      <div class="organiser-bio">Bio coming soon.</div>
+    </div>
+  </div>
+
+  <div class="organiser-card">
+    <div class="organiser-image"></div>
+    <div class="organiser-content">
+      <div class="organiser-name">Reza Haqshenas</div>
+      <div class="organiser-affiliation">University College London</div>
+      <div class="organiser-bio">Bio coming soon.</div>
+    </div>
+  </div>
+
+  <div class="organiser-card">
+    <div class="organiser-image"></div>
+    <div class="organiser-content">
+      <div class="organiser-name">Ruaridh Gollifer</div>
+      <div class="organiser-affiliation">University College London</div>
+      <div class="organiser-bio">Bio coming soon.</div>
+    </div>
+  </div>
+
+  <div class="organiser-card">
+    <div class="organiser-image"></div>
+    <div class="organiser-content">
+      <div class="organiser-name">Saransh Chopra</div>
+      <div class="organiser-affiliation">University College London</div>
+      <div class="organiser-bio">Bio coming soon.</div>
+    </div>
+  </div>
+
+  <div class="organiser-card">
+    <div class="organiser-image"></div>
+    <div class="organiser-content">
+      <div class="organiser-name">Laura Connolly</div>
+      <div class="organiser-affiliation">Queen’s University, Canada</div>
+      <div class="organiser-bio">Laura is a Ph.D. candidate in medical robotics, focusing on haptic feedback for image-guided surgery. She is passionate about open-source tools and collaborative research.</div>
+    </div>
+  </div>
+
+  <div class="organiser-card">
+    <div class="organiser-image"></div>
+    <div class="organiser-content">
+      <div class="organiser-name">Junichi Tokuda</div>
+      <div class="organiser-affiliation">Brigham and Women’s Hospital and Harvard Medical School</div>
+      <div class="organiser-bio">Bio coming soon.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
