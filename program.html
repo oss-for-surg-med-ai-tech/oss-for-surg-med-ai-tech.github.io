@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop Program</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 28px;
+      color: #222;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #6a11cb;
+      background-image: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    td:first-child, th:first-child {
+      width: 160px; /* Widen the time column */
+    }
+    .session-header {
+      background-color: #e9ecef; /* Light gray for breaks */
+      font-weight: bold;
+      text-align: center;
+    }
+    a {
+      color: #2575fc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Workshop Program</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Title</th>
+      <th>Speaker Name & Organisation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="session-header">
+      <td>08:30 - 09:00</td>
+      <td colspan="2">Registration & Coffee</td>
+    </tr>
+    <tr>
+      <td>09:00 - 09:10</td>
+      <td>Welcome</td>
+      <td>Organising committee</td>
+    </tr>
+    <tr>
+      <td>09:10 - 09:50</td>
+      <td>Addressing The Translation of Medical AI From Research to Clinical Practice</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#stephen-aylward')">Stephen Aylward, NVIDIA</a></td>
+    </tr>
+    <tr>
+      <td>09:50 - 10:30</td>
+      <td>From Prototype to Product: Accelerating Clinical Translation with High-Quality Open-Source Software and Engineering Practices</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#andinet-enquobahrie')">Andinet Enquobahrie, Medical Computing Kitware, Inc.</a></td>
+    </tr>
+    <tr class="session-header">
+      <td>10:30 - 11:00</td>
+      <td colspan="2">Coffee Break</td>
+    </tr>
+    <tr>
+      <td>11:00 - 11:20</td>
+      <td>Challenges of open-source in biomedical engineering</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#diana-oliveira')">Diana Oliveira, University College London</a></td>
+    </tr>
+    <tr>
+      <td>11:20 - 11:40</td>
+      <td>Building a Community-First KUKA LBR Driver: Architecture, Challenges, and Roadmap</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#martin-huber')">Martin Huber, King’s College London</a></td>
+    </tr>
+    <tr>
+      <td>11:40 - 12:00</td>
+      <td>From scanner hardware to imaging software: Redefining MRI Accessibility through Open Source Solutions</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#christoph-kolbitsch')">Christoph Kolbitsch, Physikalisch-Technische Bundesanstalt (PTB)</a></td>
+    </tr>
+    <tr>
+      <td>12:00 - 12:20</td>
+      <td>A Deep Dive into Artificial Intelligence for Endoscopy</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#rawen-kader')">Rawen Kader, University College London</a></td>
+    </tr>
+    <tr>
+      <td>12:20 - 12:30</td>
+      <td>Spotlights for Posters</td>
+      <td>-</td>
+    </tr>
+    <tr class="session-header">
+      <td>12:30 - 13:30</td>
+      <td colspan="2">Lunch Break</td>
+    </tr>
+    <tr>
+      <td>13:30 - 14:15</td>
+      <td><strong>Panel Discussion</strong></td>
+      <td>
+        <a href="#" onclick="parent.loadPage('speakers.html#ahmed-alhindawi')">Ahmed Al-Hindawi (UCL)</a>, 
+        <a href="#" onclick="parent.loadPage('speakers.html#jennifer-jiangkell')">Jennifer Jiang-Kell (Healthchain)</a>, 
+        <a href="#" onclick="parent.loadPage('speakers.html#thomas-wood')">Thomas Wood (Harmony Data)</a>, 
+        <a href="#" onclick="parent.loadPage('speakers.html#philip-cosgriff')">Philip Cosgriff (Consultant Clinical Scientist)</a>, 
+        <a href="#" onclick="parent.loadPage('speakers.html#zachary-baum')">Zachary Baum (Odin Visual)</a>, 
+        <a href="#" onclick="parent.loadPage('speakers.html#rachael-rodell')">Rachael Rodell (UCL)</a>, 
+        <a href="#" onclick="parent.loadPage('speakers.html#shashank-sharma')">Shashank Sharma (Karl Storz)</a>
+      </td>
+    </tr>
+    <tr>
+      <td>14:15 - 14:35</td>
+      <td>ARRUS an Open Source Framework for Software-defined Ultrasound</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#marcin-lewandowski')">Marcin Lewandowski, CEO of us4us Ltd</a></td>
+    </tr>
+    <tr>
+      <td>14:35 - 14:55</td>
+      <td>How Debian Med can help you, and vice versa</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#pierre-gruet')">Pierre Gruet, Debian</a></td>
+    </tr>
+    <tr>
+      <td>14:55 - 15:15</td>
+      <td>Eye2Gene with Open Source: Open Source in Ophthalmology - the Open Sight Initiative</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#william-woof')">William Woof, eye2gene</a></td>
+    </tr>
+    <tr class="session-header">
+      <td>15:15 - 15:40</td>
+      <td colspan="2">Coffee Break</td>
+    </tr>
+    <tr>
+      <td>15:40 - 16:00</td>
+      <td>Regulatory pathways for medical devices when using open source</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#gernot-kronreif')">Gernot Kronreif, ACMIC</a></td>
+    </tr>
+    <tr>
+      <td>16:00 - 16:20</td>
+      <td>Why do we need AI for autonomous surgical robots?</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#mikael-brudfors')">Mikael Brudfors, NVIDIA</a></td>
+    </tr>
+    <tr>
+      <td>16:20 - 16:40</td>
+      <td>Global Harmonisation of AI-Enabled Software as a Medical Device (SaMD)</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#sandeep-reddy')">Sandeep Reddy, Queensland University of Technology</a></td>
+    </tr>
+    <tr>
+      <td>16:40 - 17:00</td>
+      <td>Synthetic data for Medical Imaging AI</td>
+      <td><a href="#" onclick="parent.loadPage('speakers.html#elena-sizikova')">Elena Sizikova, Center for Devices and Radiological Health (CDRH)</a></td>
+    </tr>
+    <tr>
+      <td>17:00 - 17:15</td>
+      <td>Poster awards and workshop closure</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

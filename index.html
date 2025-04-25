@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSMR 2025 Workshop: Healing through collaboration</title>
+
+  <!-- Add Open Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif; /* Changed to Open Sans */
+      scroll-behavior: smooth;
+    }
+
+    /* Sticky top bar (header + nav) */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%); /* Colorful gradient */
+      color: white;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    header {
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      background: transparent; /* Transparent so it shows the gradient */
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: transparent; /* Transparent so it shows the gradient */
+    }
+
+    nav a {
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2); /* Light transparent hover */
+      color: #ffffff;
+      border-radius: 5px; /* Rounded corners on hover */
+    }
+
+    /* Main content area under the fixed top bar */
+    .content {
+      margin-top: 150px; /* Leave space for fixed header + nav */
+      padding: 20px;
+      height: calc(100vh - 150px);
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+
+  <script>
+    function loadPage(page) {
+      document.getElementById('content-frame').src = page;
+    }
+  </script>
+
+</head>
+<body>
+
+  <!-- Fixed Top Bar with Title and Navigation -->
+  <div class="top-bar">
+    <header>
+      HSMR 2025 Workshop: Healing through collaboration
+    </header>
+    <nav>
+      <a href="#" onclick="loadPage('welcome.html')">Welcome</a>
+      <a href="#" onclick="loadPage('callforposters.html')">Call for posters</a>
+      <a href="#" onclick="loadPage('program.html')">Program</a>
+      <a href="#" onclick="loadPage('importantdates.html')">Important Dates</a>
+      <a href="#" onclick="loadPage('FAQ.html')">FAQ</a>
+      <a href="#" onclick="loadPage('speakers.html')">Speakers</a> <!-- New Tab -->
+    </nav>
+  </div>
+
+  <!-- Content Frame -->
+  <div class="content">
+    <iframe id="content-frame" src="home.html"></iframe>
+  </div>
+
+</body>
+</html>
