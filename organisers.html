@@ -27,39 +27,47 @@
     }
     .organiser-card {
       width: 300px;
-      border: 1px solid #ddd;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
       background-color: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: flex;
       flex-direction: column;
-      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    
+    .organiser-card:hover {
+      transform: translateY(-4px);
     }
     
     .organiser-image {
-      height: 200px;
+      width: 100%;
+      aspect-ratio: 4 / 3; /* Keeps image rectangular, not squished */
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
     }
     
     .organiser-content {
-      padding: 15px;
+      padding: 16px;
     }
     
     .organiser-name {
-      font-weight: bold;
       font-size: 18px;
-      margin-bottom: 5px;
+      font-weight: bold;
+      margin-bottom: 4px;
     }
     
     .organiser-affiliation {
       font-style: italic;
+      color: #555;
       margin-bottom: 10px;
     }
     
     .organiser-bio {
       font-size: 14px;
+      color: #333;
     }
+
 
   </style>
 </head>
