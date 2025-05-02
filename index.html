@@ -68,6 +68,52 @@
       height: 100%;
       border: none;
     }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropbtn {
+      background: transparent;
+      color: #f2f2f2;
+      padding: 14px 16px;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .dropbtn:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #6a11cb;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1001;
+    }
+    
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
   </style>
 
   <script>
@@ -92,7 +138,14 @@
       <a href="#" onclick="loadPage('FAQ.html')">FAQ</a>
       <a href="#" onclick="loadPage('speakers.html')">Speakers</a>
       <a href="#" onclick="loadPage('organisers.html')">Organisers</a>
-      <a href="#" onclick="loadPage('allyears.html')">All years</a> 
+      <div class="dropdown">
+        <button class="dropbtn">All years</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="loadPage('program.html')">2025</a>
+          <a href="#" onclick="loadPage('2024.html')">2024</a>
+          <a href="#" onclick="loadPage('2023.html')">2023</a>
+        </div>
+      </div>
     </nav>
   </div>
 
