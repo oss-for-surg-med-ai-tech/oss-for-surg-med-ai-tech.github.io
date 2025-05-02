@@ -26,43 +26,41 @@
       margin: 0 auto;
     }
     .organiser-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      border: 1px solid #ddd;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
       overflow: hidden;
-      transition: transform 0.2s ease;
     }
-    .organiser-card:hover {
-      transform: translateY(-5px);
-    }
+    
     .organiser-image {
-      width: 120px;
-      height: 120px;
+      height: 200px;
       background-size: cover;
       background-position: center;
-      border-radius: 50%; /* Makes it circular */
-      margin-right: 20px;
+      background-repeat: no-repeat;
     }
-
+    
     .organiser-content {
-      padding: 20px;
+      padding: 15px;
     }
+    
     .organiser-name {
-      font-size: 20px;
       font-weight: bold;
-      margin-bottom: 8px;
-      color: #2575fc;
+      font-size: 18px;
+      margin-bottom: 5px;
     }
+    
     .organiser-affiliation {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 12px;
+      font-style: italic;
+      margin-bottom: 10px;
     }
+    
     .organiser-bio {
       font-size: 14px;
-      color: #555;
-      line-height: 1.5;
     }
+
   </style>
 </head>
 <body>
