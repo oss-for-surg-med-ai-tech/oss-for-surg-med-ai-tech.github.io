@@ -71,15 +71,16 @@
 
     .content {
       margin-top: 150px;
-      padding: 20px;
-      height: auto;
-      min-height: 500px;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
     }
 
     iframe {
-      width: 100%;
+      width: 100vw;
       height: 80vh;
       border: none;
+      overflow-x: hidden;
     }
 
     @media screen and (max-width: 768px) {
@@ -97,9 +98,12 @@
 
       .content {
         margin-top: 200px;
+        width: 100%;
+        overflow-x: hidden;
       }
 
       iframe {
+        width: 100vw;
         height: 75vh;
       }
     }
