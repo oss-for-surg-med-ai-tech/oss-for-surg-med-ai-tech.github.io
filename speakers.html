@@ -11,10 +11,12 @@
       margin: 20px;
       background-color: #f8f9fa;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 30px;
     }
+
     .speaker {
       background: white;
       border-radius: 8px;
@@ -23,8 +25,9 @@
       max-width: 800px;
       padding: 20px;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
+
     .speaker img {
       width: 120px;
       height: 120px;
@@ -33,9 +36,19 @@
       aspect-ratio: 1 / 1;
       margin-right: 30px;
     }
+
     .speaker h2 {
-      margin: 0 0 10px;
+      margin: 0;
+      font-size: 22px;
     }
+
+    .speaker .company {
+      margin: 4px 0 12px;
+      font-style: italic;
+      color: #666;
+      font-size: 16px;
+    }
+
     .speaker p {
       margin: 0;
     }
@@ -49,16 +62,19 @@
   <img src="figures/stephen_aylward.jpeg" alt="Stephen Aylward">
   <div>
     <h2>Stephen Aylward</h2>
-    <p>NVIDIA</p>
-    <p>Dr. Stephen Aylward is a Strategic Applied Research for Medical Technologies at NVIDIA. With 25+ years in NIH, DARPA, and DoD-funded medical imaging research and open-source platform development (ITK, VTK, 3D Slicer, and MONAI), he is now combining open-source software with accelerated computing to explore and support next gen, AI-enhanced, clinical products. His interests range from intelligent ultrasound systems to autonomous surgical robots. He is also a MICCAI Fellow, an adjunct professor in Computer Science at the University of North Carolina (UNC) at Chapel Hill, and chair of the MONAI Advisory Board. Previously, he was Senior Director of Strategic Initiatives at Kitware, and before founding Kitware’s office in North Carolina, he was a tenured professor in Radiology at UNC.</p>
+    <p class="company">NVIDIA</p>
+    <p>Dr. Stephen Aylward is a Strategic Applied Researcher for Medical Technologies at NVIDIA. With 25+ years in NIH, DARPA, and DoD-funded medical imaging research and open-source platform development (ITK, VTK, 3D Slicer, and MONAI), he is now combining open-source software with accelerated computing to explore and support next-gen, AI-enhanced, clinical products. His interests range from intelligent ultrasound systems to autonomous surgical robots. He is also a MICCAI Fellow, an adjunct professor in Computer Science at the University of North Carolina (UNC) at Chapel Hill, and chair of the MONAI Advisory Board. Previously, he was Senior Director of Strategic Initiatives at Kitware, and before founding Kitware’s office in North Carolina, he was a tenured professor in Radiology at UNC.</p>
   </div>
 </div>
+
+<!-- Now using the same format for everyone else -->
 
 <div id="andinet-enquobahrie" class="speaker">
   <img src="figures/andinet_enquobahrie.jpeg" alt="Andinet Enquobahrie">
   <div>
     <h2>Andinet Enquobahrie</h2>
-    <p>Medical Computing Kitware, Inc.</p>
+    <p class="company">Medical Computing, Kitware Inc.</p>
+    <p>Andinet Enquobahrie is a Senior Director of Medical Computing at Kitware, a leader in open-source innovation. He has over two decades of experience in medical imaging, healthcare research, and the development of AI-driven technologies for image-guided surgical applications. His work spans image analysis, surgical data science, computer-aided diagnosis, and clinical decision support, with a strong emphasis on translating research into practical, real-world applications. At Kitware, he leads a team of engineers working on open-source solutions that advance medical computing, including algorithm development, visualization, and scalable AI integration. Dr. Enquobahrie’s research focuses on AI-driven medical imaging and data science, with projects involving quantitative imaging, multimodal data integration, and scalable machine learning solutions. He has contributed to widely used open-source platforms and frameworks, including the early development of the Image-Guided Surgery Toolkit (IGSTK). His work has been funded by the National Institutes of Health (NIH), ARPA-H, and other agencies, supporting innovations in medical AI. Dr. Enquobahrie holds a Ph.D. in Electrical and Computer Engineering from Cornell University and an MBA from North Carolina State University, with a focus on technology and innovation management. He is passionate about making AI more transparent, scalable, and clinically impactful through open-source collaboration and rigorous validation.</p>
   </div>
 </div>
 
@@ -66,7 +82,8 @@
   <img src="figures/diana_oliveira.jpg" alt="Diana Oliveira">
   <div>
     <h2>Diana Oliveira</h2>
-    <p>University College London</p>
+    <p class="company">University College London</p>
+    <p>Diana Oliveira is a Research Fellow in Haemodynamic Modelling at University College London, specialising in computational modelling of the circulatory system. With a PhD in Biomedical Engineering from the University of Birmingham, her work integrates medical imaging and physics-based simulations to tackle clinically relevant challenges. Diana has collaborated with international clinical and industry partners to develop personalised models of cardiovascular function, including heart valves and haemodialysis devices. Her current research focuses on simulating blood flow and transport in the placenta, as well as MRI signals, advancing understanding of feto-placental development through interdisciplinary collaborations across engineering, imaging, and antenatal health.</p>
   </div>
 </div>
 
@@ -74,7 +91,8 @@
   <img src="figures/martin_huber.jpeg" alt="Martin Huber">
   <div>
     <h2>Martin Huber</h2>
-    <p>King’s College London</p>
+    <p class="company">King’s College London</p>
+    <p>Martin is a Research Assistant at King’s College London, working with Prof. Christos Bergeles and Prof. Tom Vercauteren on spatial intelligence for robotic surgery. Previously, he was a Robotics Software Engineer at Johnson & Johnson, contributing to the Monarch platform. He started his career at the German Cancer Research Center, focusing on generative modeling for CT scans in C++. With experience spanning academia and industry, Martin is particularly interested in open-source software’s role in medical innovation and surgical robotics.</p>
   </div>
 </div>
 
@@ -82,7 +100,8 @@
   <img src="figures/christoph_kolbitsch.jpeg" alt="Christoph Kolbitsch">
   <div>
     <h2>Christoph Kolbitsch</h2>
-    <p>Physikalisch-Technische Bundesanstalt (PTB)</p>
+    <p class="company">Physikalisch-Technische Bundesanstalt (PTB)</p>
+    <p>"Christoph Kolbitsch completed his PhD at King’s College London, UK, in 2012, focusing on Advanced Techniques for Cardiovascular Magnetic Resonance Imaging in Cases of Irregular Motion. After his PhD, he worked as a postdoctoral research associate at King’s College London, specializing in motion correction for PET-MR applications. In 2015, he joined the Physikalisch-Technische Bundesanstalt (PTB) in Berlin, Germany. Since 2017, he is head of the “Quantitative MRI” research group at PTB. Dr. Kolbitsch has contributed to several open-source software packages for medical image reconstruction, including https://github.com/SyneRBI/SIRF and https://github.com/PTB-MR/mrpro. Currently, he serves as the project leader of the EU-funded A4IM initiative, which is focused on developing an open-source MRI scanner (https://www.a4im.ptb.de/home)"</p>
   </div>
 </div>
 
@@ -90,7 +109,8 @@
   <img src="figures/rawen_kader.jpeg" alt="Rawen Kader">
   <div>
     <h2>Rawen Kader</h2>
-    <p>University College London</p>
+    <p class="company">University College London</p>
+    <p>Rawen is a gastroenterologist with a research interest on improving the quality of endoscopy using artificial intelligence (AI). I have developed several AI systems for endoscopy, such as Barrett’s neoplasia detection, colorectal polyp detection and diagnosis, and to automate the measurement of key performance indicators. I have also led randomised controlled trials evaluating these systems, which has led to several international awards. I actively contribute to AI guidelines in healthcare, serving on the European Society of Gastrointestinal Endoscopy (ESGE) AI Task Force, a member of the DECIDE-AI guidelines group, and an external stakeholder in the UK’s national healthcare assessment of polyp CADe systems.</p>
   </div>
 </div>
 
@@ -98,7 +118,8 @@
   <img src="figures/marcin_lewandowski.jpeg" alt="Marcin Lewandowski">
   <div>
     <h2>Marcin Lewandowski</h2>
-    <p>CEO of us4us Ltd</p>
+    <p class="company">CEO of us4us Ltd</p>
+    <p>Since receiving a master’s degree in physics followed by a PhD in Electronic Engineering (2009), Marcin Lewandowski has headed many R&D projects, product designs, and medical devices developments. He has authored numerous publications in scientific journals on the medical and industrial applications of ultrasound. Over the course of 30+ years working in ultrasound, electronics and software development, Marcin has strived to apply his research expertise in projects with a strong potential for innovation and commercialization. Today, he balances work in research with his role as CEO at us4us Ltd., who produces original ultrasound solutions for research, biomedical and industrial applications.</p>
   </div>
 </div>
 
@@ -106,7 +127,8 @@
   <img src="figures/pierre_gruet.jpeg" alt="Pierre Gruet">
   <div>
     <h2>Pierre Gruet</h2>
-    <p>Debian</p>
+    <p class="company">Debian</p>
+    <p>Dr. Pierre Gruet holds a PhD in Applied Mathematics and works in the Research and Development department at EDF in France. In addition to his research in statistics and probability, he contributes to the development of the Debian GNU/Linux operating system. His work primarily focuses on packaging computational codes as well as software in fields such as bioinformatics and medical imaging.</p>
   </div>
 </div>
 
@@ -114,7 +136,8 @@
   <img src="figures/william_woof.jpeg" alt="William Woof">
   <div>
     <h2>William Woof</h2>
-    <p>eye2gene</p>
+    <p class="company">eye2gene</p>
+    <p>"William Woof is a postdoctoral research fellow in the Pontikos Lab at the UCL Institute of Ophthalmology and Moorfields Eye Hospital. He is the lead AI engineer behind the Eye2Gene project and has worked in ophthalmology for 5 years. He also has experience of living with an inherited eye condition. He has a Master in mathematics from Durham University and a PhD in reinforcement learning from Manchester University. He has a general interest in deep learning applications ranging from video game AI to simulating urban navigation. In his spare time he likes tinkering with mechanical calculators."</p>
   </div>
 </div>
 
@@ -122,7 +145,8 @@
   <img src="figures/gernot_kronreif.jpeg" alt="Gernot Kronreif">
   <div>
     <h2>Gernot Kronreif</h2>
-    <p>ACMIT</p>
+    <p class="company">ACMIT</p>
+    <p> </p>
   </div>
 </div>
 
@@ -130,7 +154,8 @@
   <img src="figures/mikael_brudfors.jpeg" alt="Mikael Brudfors">
   <div>
     <h2>Mikael Brudfors</h2>
-    <p>NVIDIA</p>
+    <p class="company">NVIDIA</p>
+    <p>Mikael is a solution architect at NVIDIA, focusing on AI-enabled healthcare in the EMEA region. Mikael also specializes in the integration of NVIDIA software and hardware in both medical device and medical imaging applications. Prior to joining NVIDIA Mikael worked at MedTech startups, and as a researcher at various academic institutions.</p>
   </div>
 </div>
 
@@ -138,7 +163,8 @@
   <img src="figures/sandeep_reddy.jpeg" alt="Sandeep Reddy">
   <div>
     <h2>Sandeep Reddy</h2>
-    <p>Queensland University of Technology</p>
+    <p class="company">Queensland University of Technology</p>
+    <p> Professor Sandeep Reddy brings exceptional expertise in artificial intelligence implementation in healthcare settings, with strength in developing and evaluating AI-driven healthcare solutions. As the current Professor and Head of Discipline for Healthcare Management and Health Information Management at Queensland University of Technology, he has led numerous significant projects in AI application and healthcare technology integration. His extensive experience includes serving on the WHO Digital Health Roster of Experts and Focus Group on AI for Health, demonstrating his global influence in digital health implementation. Prof. Reddy's research portfolio showcases a strong foundation in developing predictive models and implementing AI systems in healthcare, as evidenced by his recent work developing foundational model-based systems for clinical communication and medical education. His expertise in handling complex healthcare data and creating evaluation frameworks is demonstrated through multiple high-impact publications, including seminal works on AI implementation frameworks. As the author and editor of several authoritative books on AI in healthcare, he brings deep knowledge of both theoretical and practical aspects of AI implementation. His experience in leading projects across diverse geographical and healthcare settings, combined with his work on clinical integration and governance frameworks for AI systems, positions him ideally to lead the development of AI systems.</p>
   </div>
 </div>
 
@@ -146,7 +172,7 @@
   <img src="figures/elena_sizikova.jpeg" alt="Elena Sizikova">
   <div>
     <h2>Elena Sizikova</h2>
-    <p>Center for Devices and Radiological Health (CDRH)</p>
+    <p class="company">Center for Devices and Radiological Health (CDRH)</p>
   </div>
 </div>
 
