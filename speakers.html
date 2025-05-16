@@ -52,6 +52,23 @@
     .speaker p {
       margin: 0;
     }
+    html {
+  overflow-x: hidden;
+  }
+  
+  @media screen and (max-width: 768px) {
+    table {
+      width: 100%;
+      max-width: none;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    th, td {
+      white-space: nowrap;
+    }
+  }
   </style>
 </head>
 <body>
